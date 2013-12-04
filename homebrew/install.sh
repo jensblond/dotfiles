@@ -15,4 +15,32 @@ fi
 # Install homebrew packages
 brew install grc coreutils spark
 
+
+# Init updater
+echo "<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>net.codeworkshop.homebrewupdate</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>~/.dotfiles/bin/homebrewupdate</string>
+	</array>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>18</integer>
+		<key>Minute</key>
+		<integer>0</integer>
+	</dict>
+	<key>StandardOutPath</key>
+	<string>/dev/null</string>
+	<key>StandardErrorPath</key>
+	<string>/dev/null</string>
+</dict>
+</plist>" > ~/Library/LaunchAgents/net.codeworkshop.homebrewupdate.plist 
+
+launchctl load ~/Library/LaunchAgents/net.codeworkshop.homebrewupdate.plist
+
 exit 0

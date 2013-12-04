@@ -1,0 +1,9 @@
+update
+upgrade
+
+install grc
+install coreutils
+install spark
+
+tap phinze/homebrew-cask
+install brew-cask

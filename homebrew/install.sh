@@ -13,7 +13,7 @@ then
 fi
 
 # Install homebrew packages
-brew install grc coreutils spark
+brew bundle $ZSH/homebrew/Brewfile
 
 
 # Init updater

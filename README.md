@@ -1,5 +1,19 @@
 # my beloved ~/.dotfiles
 
+# Requirements
+You need zsh:
+```
+chsh -s /bin/zsh
+```
+
+# Firsttime setup
+```
+ln -s ~/.dotfiles/rcrc ~/.rcrc
+./.dotfiles/script/install
+```
+
+# update
+
 ## components
 
 There's a few special files in the hierarchy.

@@ -1,3 +1,7 @@
+#!/bin/sh
+#
+# Sets OS X defaults by running $ZSH/osx/set-defaults.sh.
+
 # Sets reasonable OS X defaults.
 #
 # Or, in other words, set shit how I like in OS X.

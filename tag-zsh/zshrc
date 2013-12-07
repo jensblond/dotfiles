@@ -1,8 +1,17 @@
+export DOTFILES_DIRS=$HOME/.dotfiles
+
+# use .rcrc
+if [[ -a ~/.rcrc ]]
+then
+  source ~/.rcrc
+fi
+
 # shortcut to this dotfiles path is $ZSH
-export ZSH=$HOME/.dotfiles
+export ZSH=$DOTFILES_DIRS/zsh
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Code
+
 
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.

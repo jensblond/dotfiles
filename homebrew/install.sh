@@ -13,8 +13,7 @@ then
 fi
 
 # Install homebrew packages
-brew bundle $ZSH/homebrew/Brewfile
-
+brew bundle $DOTFILES_DIRS/**/Brewfile
 
 # Init updater
 echo "<?xml version="1.0" encoding="UTF-8"?>

@@ -4,7 +4,7 @@
 #
 # http://codeworkshop.net/posts/notification-center-updates-for-homebrew
 
-notifier=/Applications/terminal-notifier.app/Contents/MacOS/terminal-notifier
+notifier=/usr/local/bin/terminal-notifier
 
 # Give the network a chance to connect
 sleep 10

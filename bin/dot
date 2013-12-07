@@ -5,16 +5,7 @@
 # `dot` handles installation, updates, things like that. Run it periodically
 # to make sure you're on the latest and greatest.
 
-OLD_DIR=`pwd`
-
-cd $DOTFILES_DIRS
-git pull
-cd $OLD_DIR
-
-rcup
-
-# Install homebrew packages
-brew bundle $DOTFILES_DIRS/**/Brewfile
+rcup -k
 
 # reload
 . $HOME/.zshrc

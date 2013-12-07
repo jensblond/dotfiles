@@ -6,3 +6,7 @@ zstyle ':completion:*' insert-tab pending
 
 # set menu selection
 zstyle ':completion:*' menu select
+
+# fix tab-completion for cd ..<tab>
+# see: http://stackoverflow.com/questions/564648/zsh-tab-completion-for-cd
+zstyle ':completion:*' special-dirs true

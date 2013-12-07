@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 #
 # dot
 #
@@ -15,3 +15,6 @@ rcup
 
 # Install homebrew packages
 brew bundle $DOTFILES_DIRS/**/Brewfile
+
+# reload
+. $HOME/.zshrc

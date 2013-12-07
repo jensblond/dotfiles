@@ -3,31 +3,34 @@
 # Requirements
 You need zsh:
 ```
-chsh -s /bin/zsh
+$ chsh -s /bin/zsh
 ```
 
-# Firsttime setup
+# firsttime setup
 ```
-ln -s ~/.dotfiles/rcrc ~/.rcrc
-./.dotfiles/script/install
+$ ln -s ~/.dotfiles/rcrc ~/.rcrc
+$ ./.dotfiles/script/install
 ```
 
 # update
+```
+$ dot
+```
 
 ## components
 
 There's a few special files in the hierarchy.
 
-- **bin/**: Anything in `bin/` will get added to your `$PATH` and be made
+- zsh/**bin/**: Anything in `bin/` will get added to your `$PATH` and be made
   available everywhere.
-- **topic/\*.zsh**: Any files ending in `.zsh` get loaded into your
+- zsh/**topic/\*.zsh**: Any files ending in `.zsh` get loaded into your
   environment.
-- **topic/path.zsh**: Any file named `path.zsh` is loaded first and is
+- zsh/**topic/path.zsh**: Any file named `path.zsh` is loaded first and is
   expected to setup `$PATH` or similar.
-- **topic/completion.zsh**: Any file named `completion.zsh` is loaded
+- zsh/**topic/completion.zsh**: Any file named `completion.zsh` is loaded
   last and is expected to setup autocomplete.
-- **topic/\*.symlink**: Any files ending in `*.symlink` get symlinked into
+- zsh/**topic/\*.symlink**: Any files ending in `*.symlink` get symlinked into
   your `$HOME`. This is so you can keep all of those versioned in your dotfiles
   but still keep those autoloaded files in your home directory. These get
   symlinked in when you run `script/bootstrap`.
-- **topic/\*.no-autoload**: Will be excluded from autoload.
+- zsh/**topic/\*.no-autoload**: Will be excluded from autoload.

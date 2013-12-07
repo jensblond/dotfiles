@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+# simplehttpd
+#
+# Starts an simple static http server
+
+PORT=$1||8000
+
+python -m SimpleHTTPServer $PORT

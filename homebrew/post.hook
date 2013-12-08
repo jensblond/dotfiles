@@ -9,16 +9,14 @@
 brew bundle $DOTFILES_DIRS/**/Brewfile
 
 # Init updater
-echo "<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
+echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
 <dict>
 	<key>Label</key>
 	<string>net.codeworkshop.homebrewupdate</string>
-	<key>ProgramArguments</key>
-	<array>
-		<string>~/.dotfiles/bin/homebrewupdate</string>
-	</array>
+	<key>Program</key>
+   	<string>/Users/pgolm/.dotfiles/bin/homebrewupdate</string>
 	<key>StartCalendarInterval</key>
 	<dict>
 		<key>Hour</key>
@@ -33,6 +31,7 @@ echo "<?xml version="1.0" encoding="UTF-8"?>
 </dict>
 </plist>" > ~/Library/LaunchAgents/net.codeworkshop.homebrewupdate.plist 
 
+launchctl unload ~/Library/LaunchAgents/net.codeworkshop.homebrewupdate.plist
 launchctl load ~/Library/LaunchAgents/net.codeworkshop.homebrewupdate.plist
 
 exit 0

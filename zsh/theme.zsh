@@ -11,10 +11,13 @@ else
     rvm_ruby='%{$fg[red]%}‹$(rbenv version | sed -e "s/ (set.*$//")›%{$reset_color%}'
   fi
 fi
+if which pyenv &> /dev/null; then
+	py_version='%{$fg[red]%}‹$(pyenv version | sed -e "s/ (set.*$//")›%{$reset_color%}'
+fi
 local git_branch='$(git_prompt_info)%{$reset_color%}'
 
-PROMPT="╭─${user_host} ${current_dir} ${rvm_ruby} ${git_branch}
-╰─%B$%b "
+PROMPT="╭─${user_host} ${current_dir} ${rvm_ruby} ${py_version} ${git_branch}
+╰─%B○%b "
 RPS1="${return_code}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}‹"

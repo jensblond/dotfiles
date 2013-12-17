@@ -3,3 +3,7 @@
 *~
 *.swp
 *.rbc
+
+# ignore local *env-files 
+.python-version
+.ruby-version

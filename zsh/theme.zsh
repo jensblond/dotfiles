@@ -1,24 +1,25 @@
-# ZSH Theme - Preview: http://gyazo.com/8becc8a7ed5ab54a0262a470555c3eed.png
+# COLLECT DATA
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
 local user_host='%{$terminfo[bold]$fg[green]%}%n@%m%{$reset_color%}'
 local current_dir='%{$terminfo[bold]$fg[blue]%} %~%{$reset_color%}'
-local rvm_ruby=''
-if which rvm-prompt &> /dev/null; then
-  rvm_ruby='%{$fg[red]%}‹$(rvm-prompt i v g)›%{$reset_color%}'
-else
-  if which rbenv &> /dev/null; then
-    rvm_ruby='%{$fg[red]%}‹$(rbenv version | sed -e "s/ (set.*$//")›%{$reset_color%}'
-  fi
-fi
-if which pyenv &> /dev/null; then
-	py_version='%{$fg[red]%}‹$(pyenv version | sed -e "s/ (set.*$//")›%{$reset_color%}'
-fi
+local ruby_version='%{$fg[red]%}‹$(ruby_version_info)›%{$reset_color%}'
+local python_version='%{$fg[yellow]%}‹$(python_version_info)›%{$reset_color%}'
+
 local git_branch='$(git_prompt_info)%{$reset_color%}'
 
-PROMPT="╭─${user_host} ${current_dir} ${rvm_ruby} ${py_version} ${git_branch}
-╰─%B○%b "
-RPS1="${return_code}"
+# ZSH SETUP
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[magenta]%}‹"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[magenta]%}›%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}✓%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[red]%}✗%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_AHEAD="%{$fg[cyan]%}▴%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_BEHIND="%{$fg[magenta]%}▾%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_STAGED="%{$fg_bold[green]%}●%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_UNSTAGED="%{$fg_bold[yellow]%}●%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg_bold[red]%}●%{$reset_color%}"
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}‹"
-ZSH_THEME_GIT_PROMPT_SUFFIX="› %{$reset_color%}"
+# DEFINE PROMPRT
+RPS1="${return_code}"
+PROMPT="╭─${user_host} ${current_dir} ${git_branch} ${ruby_version} ${python_version}
+╰─%B○%b "

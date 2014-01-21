@@ -5,3 +5,6 @@ install grc
 install coreutils
 install spark
 install terminal-notifier
+install openssl
+
+link --force openssl

@@ -20,10 +20,9 @@ set numberwidth=5
 let g:syntastic_check_on_open=1
 
 " Start NERDtree
-autocmd VimEnter * NERDTree
-autocmd BufEnter * NERDTreeMirror
-
-autocmd VimEnter * wincmd w
+"autocmd VimEnter * NERDTree
+"autocmd BufEnter * NERDTreeMirror
+"autocmd VimEnter * wincmd w
 
 
 " Natural Spilscreen Keybinding

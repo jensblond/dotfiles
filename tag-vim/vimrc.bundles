@@ -10,5 +10,6 @@ Bundle 'gmarik/vundle'
 " Define bundles via Github repos
 Bundle 'scrooloose/syntastic'
 Bundle 'wycats/nerdtree'
+Bundle 'christoomey/vim-tmux-navigator'
 
 filetype on

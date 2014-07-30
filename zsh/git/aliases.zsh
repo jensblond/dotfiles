@@ -5,3 +5,5 @@ if (( $+commands[hub] ))
 then
   alias git=$hub_path
 fi
+
+alias gti=git

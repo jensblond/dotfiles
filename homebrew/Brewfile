@@ -7,5 +7,6 @@ install spark
 install terminal-notifier
 install openssl
 install reattach-to-user-namespace
+install jq
 
 link --force openssl

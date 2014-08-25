@@ -12,6 +12,10 @@ Plugin 'scrooloose/syntastic'
 Plugin 'wycats/nerdtree'
 Plugin 'kien/ctrlp.vim'
 
+" Need by textobj-rubyblock
+Plugin 'kana/vim-textobj-user'
+Plugin 'tmhedberg/matchit'
+
 " Git
 Plugin 'tpope/vim-fugitive'
 " Comment
@@ -20,6 +24,7 @@ Plugin 'scrooloose/nerdcommenter'
 " Rails
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-rails'
+Plugin 'nelstrom/vim-textobj-rubyblock'
 
 " Javascript
 Plugin 'pangloss/vim-javascript'

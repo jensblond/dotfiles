@@ -7,10 +7,10 @@ call vundle#rc()
 " Let Vundle manage Vundle
 Plugin 'gmarik/vundle'
 
-Bundle 'christoomey/vim-run-interactive'
-Bundle 'scrooloose/syntastic'
-Bundle 'wycats/nerdtree'
-Bundle 'kien/ctrlp.vim'
+Plugin 'christoomey/vim-run-interactive'
+Plugin 'scrooloose/syntastic'
+Plugin 'wycats/nerdtree'
+Plugin 'kien/ctrlp.vim'
 
 " Git
 Plugin 'tpope/vim-fugitive'
@@ -24,18 +24,15 @@ Plugin 'tpope/vim-rails'
 " Javascript
 Plugin 'pangloss/vim-javascript'
 
-Bundle 'matze/vim-move'
-
-" Commenting
-Bundle 'tpope/vim-commentary'
+Plugin 'matze/vim-move'
 
 " Autocomplete
-Bundle 'vim-scripts/AutoComplPop'
+"Plugin 'vim-scripts/AutoComplPop'
 
 " Fileformats
-Bundle 'elzr/vim-json'
+Plugin 'elzr/vim-json'
 
 " Region expand
-Bundle 'terryma/vim-expand-region'
+Plugin 'terryma/vim-expand-region'
 
 filetype on

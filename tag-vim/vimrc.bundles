@@ -5,12 +5,19 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " Let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " Define bundles via Github repos
-Bundle 'scrooloose/syntastic'
-Bundle 'wycats/nerdtree'
-Bundle 'christoomey/vim-tmux-navigator'
-Bundle 'kien/ctrlp.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'wycats/nerdtree'
+Plugin 'kien/ctrlp.vim'
+
+" Git
+Plugin 'tpope/vim-fugitive'
+" Comment
+Plugin 'scrooloose/nerdcommenter'
+" Rails
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-rails'
 
 filetype on

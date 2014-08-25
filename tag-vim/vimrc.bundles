@@ -24,10 +24,11 @@ Plugin 'tpope/vim-rails'
 " Javascript
 Plugin 'pangloss/vim-javascript'
 
-Plugin 'matze/vim-move'
-
 " Autocomplete
-"Plugin 'vim-scripts/AutoComplPop'
+Plugin 'vim-scripts/AutoComplPop'
+
+" Multicursor
+Plugin 'terryma/vim-multiple-cursors'
 
 " Fileformats
 Plugin 'elzr/vim-json'

@@ -1,0 +1,2 @@
+" Save file
+nnoremap <Leader>w :w<CR>

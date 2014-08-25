@@ -16,8 +16,12 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 " Comment
 Plugin 'scrooloose/nerdcommenter'
+
 " Rails
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-rails'
+
+" Javascript
+Plugin 'pangloss/vim-javascript'
 
 filetype on

@@ -15,8 +15,14 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 
+" Config
 if filereadable(expand("~/.vimrc.config"))
   source ~/.vimrc.config
+endif
+
+" Keymap
+if filereadable(expand("~/.vimrc.keymap"))
+  source ~/.vimrc.keymap
 endif
 
 filetype plugin indent on

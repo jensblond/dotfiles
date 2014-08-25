@@ -1,3 +1,0 @@
-install gettext
-
-link --force gettext

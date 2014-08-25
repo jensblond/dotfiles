@@ -8,9 +8,22 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Define bundles via Github repos
+Bundle 'christoomey/vim-run-interactive'
 Bundle 'scrooloose/syntastic'
 Bundle 'wycats/nerdtree'
-Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'kien/ctrlp.vim'
+
+" Git
+Bundle 'fugitive.vim'
+Bundle 'matze/vim-move'
+" Commenting
+Bundle 'tpope/vim-commentary'
+" Autocomplete
+Bundle 'vim-scripts/AutoComplPop'
+
+" Fileformats
+Bundle 'elzr/vim-json'
+" Region expand
+Bundle 'terryma/vim-expand-region'
 
 filetype on

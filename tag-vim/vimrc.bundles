@@ -36,4 +36,10 @@ Plugin 'elzr/vim-json'
 " Region expand
 Plugin 'terryma/vim-expand-region'
 
+" Tagbar
+Plugin 'majutsushi/tagbar'
+
+" Powerline clone
+Plugin 'bling/vim-airline'
+
 filetype on

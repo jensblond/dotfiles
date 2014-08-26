@@ -13,6 +13,7 @@ Plugin 'christoomey/vim-run-interactive'
 Plugin 'scrooloose/syntastic'
 Plugin 'wycats/nerdtree'
 Plugin 'kien/ctrlp.vim'
+Plugin 'wincent/command-t'
 
 " Need by textobj-rubyblock
 Plugin 'kana/vim-textobj-user'
@@ -34,20 +35,15 @@ Plugin 'nelstrom/vim-textobj-rubyblock'
 "Plugin 'vim-scripts/tlib'
 "Plugin 'tomtom/tmru_vim'
 
-" Javascript
 Plugin 'pangloss/vim-javascript'
-
-" CSV
 Plugin 'chrisbra/csv.vim'
+Plugin 'elzr/vim-json'
 
 " Autocomplete
 Plugin 'vim-scripts/AutoComplPop'
 
 " Multicursor
 Plugin 'terryma/vim-multiple-cursors'
-
-" Fileformats
-Plugin 'elzr/vim-json'
 
 " Region expand
 Plugin 'terryma/vim-expand-region'

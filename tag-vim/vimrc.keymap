@@ -3,6 +3,8 @@ nnoremap <Leader>w :w<CR>
 
 nnoremap <Leader>gst :Gstatus<CR>
 
+nnoremap <Leader>bt :CommandTBuffer<CR>
+
 nnoremap <Leader>l :Tagbar<CR>
 "
 " Line movement

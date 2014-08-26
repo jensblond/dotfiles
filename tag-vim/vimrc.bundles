@@ -21,8 +21,11 @@ Plugin 'tmhedberg/matchit'
 
 " Git
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+
 " Comment
-Plugin 'scrooloose/nerdcommenter'
+"Plugin 'scrooloose/nerdcommenter'
+Plugin 'tomtom/tcomment_vim'
 
 " Rails
 Plugin 'tpope/vim-bundler'

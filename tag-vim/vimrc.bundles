@@ -26,10 +26,19 @@ Plugin 'scrooloose/nerdcommenter'
 " Rails
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-cucumber'
+Plugin 'slim-template/vim-slim'
 Plugin 'nelstrom/vim-textobj-rubyblock'
+
+"
+"Plugin 'vim-scripts/tlib'
+"Plugin 'tomtom/tmru_vim'
 
 " Javascript
 Plugin 'pangloss/vim-javascript'
+
+" CSV
+Plugin 'chrisbra/csv.vim'
 
 " Autocomplete
 Plugin 'vim-scripts/AutoComplPop'

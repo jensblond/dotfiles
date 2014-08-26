@@ -4,6 +4,9 @@
 *.swp
 *.rbc
 
+# ignore ctags
+.tags
+.tags_sorted_by_file
 # ignore local *env-files 
 .python-version
 .ruby-version

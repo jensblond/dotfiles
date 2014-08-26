@@ -7,7 +7,8 @@ call vundle#rc()
 " Let Vundle manage Vundle
 Plugin 'gmarik/vundle'
 
-" Define bundles via Github repos
+" Solarized Theme
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/syntastic'
 Plugin 'wycats/nerdtree'
 Plugin 'kien/ctrlp.vim'
@@ -23,5 +24,7 @@ Plugin 'tpope/vim-rails'
 
 " Javascript
 Plugin 'pangloss/vim-javascript'
+
+Plugin 'majutsushi/tagbar'
 
 filetype on

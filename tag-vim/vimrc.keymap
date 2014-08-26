@@ -1,2 +1,4 @@
 " Save file
 nnoremap <Leader>w :w<CR>
+nnoremap <Leader>l :TagbarToggle<CR>
+nnoremap <Leader>o :CtrlP<CR>

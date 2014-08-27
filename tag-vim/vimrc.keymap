@@ -29,7 +29,7 @@ nnoremap <Leader>gup :Gpush<CR>
 
 nnoremap <Leader>ri :RunInInteractiveShell<space>
 
-" Toggle NERDTree 
+" Toggle NERDTree
 map <silent> <D-1> :NERDTreeToggle<CR>
 
 "nnoremap <Leader>bt :CommandTBuffer<CR>

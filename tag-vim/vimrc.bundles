@@ -21,6 +21,8 @@ Plugin 'tmhedberg/matchit'
 
 " Git
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+
 " Comment
 Plugin 'scrooloose/nerdcommenter'
 
@@ -31,6 +33,7 @@ Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-cucumber'
 Plugin 'slim-template/vim-slim'
 Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'tpope/vim-endwise'
 
 "
 "Plugin 'vim-scripts/tlib'

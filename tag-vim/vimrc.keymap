@@ -23,8 +23,10 @@ endfunction
 
 " Coding
 nnoremap <Leader>gst :Gstatus<CR>
+nnoremap <Leader>gdo :Gpull<CR>
+nnoremap <Leader>gup :Gpush<CR>
 
-nnoremap <leader>ri :RunInInteractiveShell<space>
+nnoremap <Leader>ri :RunInInteractiveShell<space>
 
 " Toggle NERDTree 
 map <silent> <D-1> :NERDTreeToggle<CR>

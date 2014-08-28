@@ -11,6 +11,7 @@ Plugin 'wycats/nerdtree'
 Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/neomru.vim'
+Plugin 'rking/ag.vim'
 
 "Plugin 'kien/ctrlp.vim'
 "Plugin 'wincent/command-t'

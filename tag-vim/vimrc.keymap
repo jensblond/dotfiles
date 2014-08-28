@@ -20,6 +20,7 @@ function! s:unite_settings()
   imap <buffer> <C-j>   <Plug>(unite_select_next_line)
   imap <buffer> <C-k>   <Plug>(unite_select_previous_line)
   imap <silent><buffer><expr> <C-s>     unite#do_action('split')
+  imap <silent><buffer><expr> <C-v>     unite#do_action('vsplit')
 endfunction
 
 " Coding
@@ -28,6 +29,7 @@ nnoremap <Leader>gdo :Gpull<CR>
 nnoremap <Leader>gup :Gpush<CR>
 
 nnoremap <Leader>ri :RunInInteractiveShell<space>
+nnoremap <Leader>irw :VimProcBang invoker reload web<CR>
 
 " Toggle NERDTree
 map <silent> <D-1> :NERDTreeToggle<CR>

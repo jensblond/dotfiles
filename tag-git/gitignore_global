@@ -5,6 +5,7 @@
 *.rbc
 
 # ignore ctags
+tags
 .tags
 .tags_sorted_by_file
 # ignore local *env-files 

@@ -1,61 +1,45 @@
 " Let Vundle manage Vundle
 Plugin 'gmarik/vundle'
 
-" Solarized Theme
+" Theme
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'bling/vim-airline'
 
-Plugin 'christoomey/vim-run-interactive'
-Plugin 'scrooloose/syntastic'
-Plugin 'wycats/nerdtree'
-
+" Navigation
+Plugin 'Shougo/neomru.vim'
 Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/vimproc.vim'
-Plugin 'Shougo/neomru.vim'
+Plugin 'christoomey/vim-run-interactive'
 Plugin 'rking/ag.vim'
+Plugin 'terryma/vim-expand-region'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tomtom/tcomment_vim'
+" Plugin 'vim-scripts/AutoComplPop'
+Plugin 'wycats/nerdtree'
 
 "Plugin 'kien/ctrlp.vim'
 "Plugin 'wincent/command-t'
 
-" Need by textobj-rubyblock
+" Dependencies
 Plugin 'kana/vim-textobj-user'
 Plugin 'tmhedberg/matchit'
 
 " Git
-Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
-
-" Comment
-"Plugin 'scrooloose/nerdcommenter'
-Plugin 'tomtom/tcomment_vim'
+Plugin 'tpope/vim-fugitive'
 
 " Coding
-Plugin 'tpope/vim-bundler'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-rake'
-Plugin 'tpope/vim-cucumber'
-Plugin 'slim-template/vim-slim'
-Plugin 'nelstrom/vim-textobj-rubyblock'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-surround'
-Plugin 'pangloss/vim-javascript'
 Plugin 'chrisbra/csv.vim'
 Plugin 'elzr/vim-json'
-
-"
-"Plugin 'vim-scripts/tlib'
-"Plugin 'tomtom/tmru_vim'
-
-" Autocomplete
-Plugin 'vim-scripts/AutoComplPop'
-
-" Multicursor
-Plugin 'terryma/vim-multiple-cursors'
-
-" Region expand
-Plugin 'terryma/vim-expand-region'
-
-" Tagbar
 Plugin 'majutsushi/tagbar'
-
-" Powerline clone
-Plugin 'bling/vim-airline'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'pangloss/vim-javascript'
+Plugin 'scrooloose/syntastic'
+Plugin 'slim-template/vim-slim'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-cucumber'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-rake'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'

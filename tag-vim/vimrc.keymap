@@ -1,15 +1,48 @@
 " Basic
 nnoremap <Leader>w :w<CR>
 
+" Switch between the last two files
+nnoremap <leader><leader> <c-^>
+
+" Quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
 " Unite
 let g:unite_source_history_yank_enable = 1
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
-nnoremap <leader>t :<C-u>Unite -buffer-name=files   -start-insert file_rec/async:!<cr>
+nnoremap <leader>o :<C-u>Unite -buffer-name=files   -start-insert file_rec/async:!<cr>
 nnoremap <Leader>f :Unite grep:.<cr>
 " nnoremap <leader>r :<C-u>Unite -buffer-name=mru     -start-insert file_mru<cr>
 " nnoremap <leader>o :<C-u>Unite -buffer-name=outline -start-insert outline<cr>
 nnoremap <leader>y :<C-u>Unite -buffer-name=yank    history/yank<cr>
 nnoremap <leader>e :<C-u>Unite -buffer-name=buffer  buffer<cr>
+
+map <silent> <D-1> :NERDTreeToggle<CR>
+nnoremap <Leader>l :Tagbar<CR>
+
+" Coding
+nnoremap <Leader>gst :Gstatus<CR>
+nnoremap <Leader>gdo :Gpull<CR>
+
+nnoremap <Leader>gup :Gpush<CR>
+nnoremap <Leader>ri :RunInInteractiveShell<space>
+nnoremap <Leader>irw :VimProcBang invoker reload web<CR>
+
+" Index ctags from any project, including those outside Rails
+map <Leader>ct :VimProcBang ctags -f .tags -R .<CR>
+
+"
+" Line movement
+"
+" Insert mode
+inoremap <C-J> <ESC>:m .+1<CR>==gi
+inoremap <C-K> <ESC>:m .-2<CR>==gi
+" Visual mode
+vnoremap <C-J> :m '>+1<CR>gv=gv
+vnoremap <C-K> :m '<-2<CR>gv=gv
 
 " Custom mappings for the unite buffer
 autocmd FileType unite call s:unite_settings()
@@ -23,32 +56,3 @@ function! s:unite_settings()
   imap <silent><buffer><expr> <C-v>     unite#do_action('vsplit')
 endfunction
 
-" Coding
-nnoremap <Leader>gst :Gstatus<CR>
-nnoremap <Leader>gdo :Gpull<CR>
-nnoremap <Leader>gup :Gpush<CR>
-
-nnoremap <Leader>ri :RunInInteractiveShell<space>
-nnoremap <Leader>irw :VimProcBang invoker reload web<CR>
-
-" Toggle NERDTree
-map <silent> <D-1> :NERDTreeToggle<CR>
-
-"nnoremap <Leader>bt :CommandTBuffer<CR>
-nnoremap <Leader>l :Tagbar<CR>
-
-"
-" Line movement
-"
-
-" Normal mode
-nnoremap <C-j> :m .+1<CR>==
-nnoremap <C-k> :m .-2<CR>==
-
-" Insert mode
-inoremap <C-j> <ESC>:m .+1<CR>==gi
-inoremap <C-k> <ESC>:m .-2<CR>==gi
-
-" Visual mode
-vnoremap <C-j> :m '>+1<CR>gv=gv
-vnoremap <C-k> :m '<-2<CR>gv=gv

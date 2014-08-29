@@ -6,37 +6,32 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 
 " Navigation
-Plugin 'Shougo/neomru.vim'
-Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'christoomey/vim-run-interactive'
 Plugin 'rking/ag.vim'
-Plugin 'terryma/vim-expand-region'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tomtom/tcomment_vim'
-" Plugin 'vim-scripts/AutoComplPop'
+Plugin 'vim-scripts/AutoComplPop'
+Plugin 'wincent/command-t'
 Plugin 'wycats/nerdtree'
-
-"Plugin 'kien/ctrlp.vim'
-"Plugin 'wincent/command-t'
-
-" Dependencies
-Plugin 'kana/vim-textobj-user'
-Plugin 'tmhedberg/matchit'
 
 " Git
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 
+"
 " Coding
+"
 Plugin 'chrisbra/csv.vim'
 Plugin 'elzr/vim-json'
+Plugin 'kana/vim-textobj-user'
 Plugin 'majutsushi/tagbar'
 Plugin 'msanders/snipmate.vim'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/syntastic'
 Plugin 'slim-template/vim-slim'
+Plugin 'tmhedberg/matchit'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-cucumber'
 Plugin 'tpope/vim-endwise'

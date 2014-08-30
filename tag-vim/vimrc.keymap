@@ -4,9 +4,6 @@ let mapleader = "\<Space>"
 " :w Shortcut
 nnoremap <Leader>w :w<CR>
 
-" :Ag Shortcut
-nnoremap <Leader>f :Ag<space>
-
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
 
@@ -15,26 +12,6 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
-
-" CommandT
-nnoremap <silent> <Leader>o :CommandT<CR>
-nnoremap <silent> <Leader>b :CommandTBuffer<CR>
-nnoremap <silent> <Leader>t :CommandTTag<CR>
-
-map <silent> <D-1> :NERDTreeToggle<CR>
-nnoremap <Leader>l :Tagbar<CR>
-
-" Git
-nnoremap <Leader>gst :Gstatus<CR>
-nnoremap <Leader>gdo :Gpull<CR>
-nnoremap <Leader>gup :Gpush<CR>
-
-" InteractiveShell
-nnoremap <Leader>ri :RunInInteractiveShell<space>
-" Reload invoker
-nnoremap <Leader>irw :VimProcBang invoker reload web<CR>
-" Index ctags from any project, including those outside Rails
-map <Leader>ct :VimProcBang ctags -f .tags -R .<CR>
 
 "
 " Line movement
@@ -46,3 +23,7 @@ inoremap <C-K> <ESC>:m .-2<CR>==gi
 vnoremap <C-J> :m '>+1<CR>gv=gv
 vnoremap <C-K> :m '<-2<CR>gv=gv
 
+" InteractiveShell
+nnoremap <Leader>ri :RunInInteractiveShell<space>
+" Reload invoker
+nnoremap <Leader>irw :VimProcBang invoker reload web<CR>

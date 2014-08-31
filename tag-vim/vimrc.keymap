@@ -4,6 +4,9 @@ let mapleader = "\<Space>"
 " :w Shortcut
 nnoremap <Leader>w :w<CR>
 
+" Toggle invisble characters
+nnoremap <Leader>i :set list!<CR>
+
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
 

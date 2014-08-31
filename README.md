@@ -20,7 +20,7 @@ $ rcup -k
 
 # update
 ```
-$ dot
+$ rcup
 ```
 
 ## components

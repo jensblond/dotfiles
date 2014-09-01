@@ -1,6 +1,8 @@
 " Let Vundle manage Vundle
 Plugin 'gmarik/vundle'
 
+Plugin 'wakatime/vim-wakatime'
+
 " Theme
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'

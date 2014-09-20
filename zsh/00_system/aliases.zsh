@@ -2,14 +2,9 @@ alias reload!='. ~/.zshrc'
 alias ll='ls -al'
 
 # Bundler
-alias b="bundle"
 alias be="bundle exec"
-
-# Rails
-alias migrate="rake db:migrate db:rollback && rake db:migrate"
-alias m="migrate"
-alias rk="rake"
-alias s="rspec"
+alias bi="bundle install"
+alias br="bundle rspec"
 
 # grc overides for ls
 #   Made possible through contributions from generous benefactors like

@@ -16,3 +16,5 @@ then
   alias ll='gls -l --color'
   alias la='gls -A --color'
 fi
+
+alias be="bundle exec"

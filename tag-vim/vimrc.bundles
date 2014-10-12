@@ -25,14 +25,16 @@ Plugin 'tpope/vim-fugitive'
 "
 " Coding
 "
-Plugin 'mileszs/ack.vim'
 Plugin 'Peeja/vim-cdo'
+Plugin 'Raimondi/delimitMate'
 Plugin 'chrisbra/csv.vim'
 Plugin 'elzr/vim-json'
 Plugin 'godlygeek/tabular'
 Plugin 'kana/vim-textobj-user'
 Plugin 'majutsushi/tagbar'
+Plugin 'mileszs/ack.vim'
 Plugin 'msanders/snipmate.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/syntastic'
 Plugin 'slim-template/vim-slim'

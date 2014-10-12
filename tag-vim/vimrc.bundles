@@ -25,6 +25,7 @@ Plugin 'tpope/vim-fugitive'
 "
 " Coding
 "
+Plugin 'Align'
 Plugin 'Peeja/vim-cdo'
 Plugin 'Raimondi/delimitMate'
 Plugin 'chrisbra/csv.vim'

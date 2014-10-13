@@ -6,6 +6,9 @@ alias be='bundle exec'
 alias bi='bundle install'
 alias br='bundle rspec'
 
+# Vagrant
+alias ve='vagrant exec'
+
 # grc overides for ls
 #   Made possible through contributions from generous benefactors like
 #   `brew install coreutils`

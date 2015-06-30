@@ -7,3 +7,4 @@ let g:NERDTreeWinSize = 30
 " Keymapping
 "
 map <silent> <D-1> :NERDTreeToggle<CR>
+map <Leader>n :NERDTreeFind<CR>

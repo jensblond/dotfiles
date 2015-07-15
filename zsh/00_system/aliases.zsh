@@ -4,7 +4,7 @@ alias ll='ls -al'
 # Bundler
 alias be='bundle exec'
 alias bi='bundle install'
-alias br='bundle rspec'
+alias br='bundle exec rspec'
 
 # Vagrant
 alias ve='vagrant exec'
@@ -19,5 +19,3 @@ then
   alias ll='gls -l --color'
   alias la='gls -A --color'
 fi
-
-alias be="bundle exec"

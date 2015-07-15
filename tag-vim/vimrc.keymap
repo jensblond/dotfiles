@@ -25,5 +25,3 @@ vnoremap <C-K> :m '<-2<CR>gv=gv
 
 " InteractiveShell
 nnoremap <Leader>ri :RunInInteractiveShell<space>
-" Reload invoker
-nnoremap <Leader>irw :VimProcBang invoker reload web<CR>

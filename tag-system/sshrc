@@ -1,0 +1,5 @@
+# Bundler
+alias be='bundle exec'
+alias bi='bundle install'
+alias br='bundle exec rspec'
+alias bra='bundle exec rake'

@@ -23,6 +23,9 @@ $ rcup -k
 $ rcup
 ```
 
+# tools
+* `brew install sshrc`
+
 ## components
 
 There's a few special files in the hierarchy.

@@ -1,4 +1,4 @@
-export DOTFILES_DIRS=$HOME/.dotfiles
+export DOTFILES_DIR=$HOME/.dotfiles
 
 # use .rcrc
 if [[ -a ~/.rcrc ]]
@@ -7,7 +7,7 @@ then
 fi
 
 # shortcut to this dotfiles path is $ZSH
-export ZSH=$DOTFILES_DIRS/zsh
+export ZSH=$DOTFILES_DIR/zsh
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Code

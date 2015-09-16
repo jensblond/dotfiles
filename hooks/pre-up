@@ -3,7 +3,7 @@
 set -e
 
 PWD_RECOVERY=`pwd`
-cd $DOTFILES_DIRS
+cd $DOTFILES_DIR
 git pull
 
 find . -name pre.hook | while read hook ; do zsh -c "${hook}" ; done

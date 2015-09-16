@@ -1,6 +1,6 @@
 set -gx DOTFILES_DIR ~/.dotfiles
+set -gx PATH ~/.bin $PATH
 
-. /usr/local/etc/autojump.fish
-
+# rbenv setup
 set -gx RBENV_ROOT /usr/local/var/rbenv
 . (rbenv init - fish)

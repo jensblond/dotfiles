@@ -1,1 +1,0 @@
-source $ZSH/zsh-syntax-highlighting.no-autoload/zsh-syntax-highlighting.zsh

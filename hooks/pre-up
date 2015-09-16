@@ -6,6 +6,6 @@ PWD_RECOVERY=`pwd`
 cd $DOTFILES_DIR
 git pull
 
-find . -name pre.hook | while read hook ; do zsh -c "${hook}" ; done
+find . -name pre.hook | while read hook ; do fish -c "${hook}" ; done
 
 cd $PWD_RECOVERY

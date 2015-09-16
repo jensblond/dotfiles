@@ -8,4 +8,9 @@ git pull
 
 find . -name pre.hook | while read hook ; do fish -c "${hook}" ; done
 
+# Install Brewfiles
+find . -name Brewfile -exec cat '{}' \; > Brewfile.tmp
+fish -c "brew bundle  --file=Brewfile.tmp"
+rm Brewfile.tmp
+
 cd $PWD_RECOVERY

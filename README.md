@@ -1,15 +1,21 @@
 # my beloved ~/.dotfiles
 
 # Requirements
-You need zsh:
+You need fish:
 ```
-$ chsh -s /bin/zsh
+$ chsh -s /usr/local/bin/fish
 ```
 
 Install rcm:
 ```
 $ brew tap mike-burns/rcm
 $ brew install rcm
+```
+
+Install brew-bundler:
+```
+brew tap Homebrew/bundle
+brew bundle
 ```
 
 # firsttime setup
@@ -22,6 +28,3 @@ $ rcup -k
 ```
 $ rcup
 ```
-
-# tools
-* `brew install sshrc`

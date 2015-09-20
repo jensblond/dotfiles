@@ -8,7 +8,7 @@ $ chsh -s /usr/local/bin/fish
 
 Install rcm:
 ```
-$ brew tap mike-burns/rcm
+$ brew tap thoughtbot/rcm
 $ brew install rcm
 ```
 

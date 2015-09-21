@@ -4,5 +4,5 @@ set -e
 
 # Install Brewfiles
 find . -name Brewfile -exec cat '{}' \; > Brewfile.tmp
-fish -c "brew bundle  --file=Brewfile.tmp"
+sh -c "brew bundle  --file=Brewfile.tmp"
 rm Brewfile.tmp

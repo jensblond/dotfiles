@@ -1,0 +1,5 @@
+# Bundler
+alias be='bundle exec'
+alias bi='bundle install'
+
+alias ssh='sshrc'

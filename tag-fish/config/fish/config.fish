@@ -1,5 +1,6 @@
 set -gx PATH ~/.bin $PATH
 
+[ -f ~/.aliases ]; and . ~/.aliases
 [ -f /usr/local/share/autojump/autojump.fish ]; and . /usr/local/share/autojump/autojump.fish
 
 # rbenv setup

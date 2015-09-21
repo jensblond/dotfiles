@@ -1,30 +1,20 @@
-# my beloved ~/.dotfiles
+# ~/.dotfiles
 
 # Requirements
-You need fish:
-```
-$ chsh -s /usr/local/bin/fish
-```
 
-Install rcm:
+Install [rcm](https://github.com/thoughtbot/rcm):
 ```
 $ brew tap thoughtbot/rcm
 $ brew install rcm
 ```
 
-Install brew-bundler:
+Install [brew-bundler](https://github.com/Homebrew/homebrew-bundle):
 ```
 brew tap Homebrew/bundle
 brew bundle
 ```
 
-# firsttime setup
+Install the dotfiles:
 ```
-$ ln -s ~/.dotfiles/rcrc ~/.rcrc
-$ rcup -k
-```
-
-# update
-```
-$ rcup
+$ env RCRC=$HOME/.dotfiles/rcrc rcup -k
 ```

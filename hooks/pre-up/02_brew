@@ -1,16 +1,8 @@
 #!/bin/sh
-
 set -e
-
-PWD_RECOVERY=`pwd`
-cd $DOTFILES_DIR
-git pull
-
-find . -name pre.hook | while read hook ; do fish -c "${hook}" ; done
+. ~/.dotfiles/hooks/_functions
 
 # Install Brewfiles
 find . -name Brewfile -exec cat '{}' \; > Brewfile.tmp
 fish -c "brew bundle  --file=Brewfile.tmp"
 rm Brewfile.tmp
-
-cd $PWD_RECOVERY

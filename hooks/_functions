@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export DOTFILES_DIR=$HOME/.dotfiles
+
+cd $DOTFILES_DIR

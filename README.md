@@ -11,7 +11,7 @@ $ env RCRC=$HOME/.dotfiles/rcrc rcup -k
 
 Install [rcm](https://github.com/thoughtbot/rcm):
 ```
-$ brew tap thoughtbot/rcm
+$ brew tap thoughtbot/formulae
 $ brew install rcm
 ```
 
